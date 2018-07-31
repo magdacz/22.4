@@ -38,7 +38,7 @@ handleEditPost = () => {
   this.props.toggleEditPost();
   this.props.editPostRequest(this.state);
 };
-
+ 
   renderPostForm = () => {
       return (
         <div className={styles['form-content']}>
@@ -53,7 +53,7 @@ handleEditPost = () => {
 
   renderPost = () => {
       return (
-        <div className={`${styles['single-post']} ${styles['post-detail']}`}>
+        <div className={styles['single-post', 'post-detail']}>
           <h3 className={styles['post-title']}>{this.props.post.title}</h3>
           <p className={styles['author-name']}><FormattedMessage id="by" /> {this.props.post.name}</p>
           <p className={styles['post-desc']}>{this.props.post.content}</p>

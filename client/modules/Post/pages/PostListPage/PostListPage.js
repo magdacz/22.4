@@ -56,6 +56,7 @@ function mapStateToProps(state) {
   return {
     showAddPost: getShowAddPost(state),
     posts: getPosts(state),
+    
   };
 }
 

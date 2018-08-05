@@ -90,14 +90,23 @@ textarea {
     margin-bottom: 8px;
 }
 
-.post-action a{
+.post-action, .post-action-down {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.post-action-down {
+    padding-left: 20px;
+}
+
+.post-action a, .post-action-down a {
     color: #555;
     text-decoration: none;
     font-size: 14px;
     font-style: italic;
 }
 
-.post-action a:hover{
+.post-action a:hover, .post-action-down a:hover {
     color: #EF5350;
 }
 

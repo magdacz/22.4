@@ -33,8 +33,6 @@ PostList.propTypes = {
     votes: PropTypes.number.isRequired,
   })).isRequired,
   handleDeletePost: PropTypes.func.isRequired,
-  thumbUp: PropTypes.func.isRequired,
-  thumbDown: PropTypes.func.isRequired,
 };
 
 export default PostList;

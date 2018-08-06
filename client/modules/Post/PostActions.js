@@ -91,7 +91,7 @@ export function thumbUp(cuid) {
 
 export function thumbUpRequest(cuid) {
     return (dispatch) => {
-        return callApi(`posts/${cuid}`, 'up').then(() => dispatch(thumbUp(cuid)));
+        return callApi(`posts/${cuid}`, 'put').then(() => dispatch(thumbUp(cuid)));
     }
 }
 
@@ -104,6 +104,6 @@ export function thumbDown(cuid) {
 
 export function thumbDownRequest(cuid) {
     return (dispatch) => {
-        return callApi(`posts/${cuid}`, 'down').then(() => dispatch(thumbDown(cuid)));
+        return callApi(`posts/${cuid}`, 'put').then(() => dispatch(thumbDown(cuid)));
     }
 }

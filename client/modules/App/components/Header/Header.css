@@ -35,6 +35,8 @@
 
 .language-switcher {
   background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
 }
 
 .language-switcher ul {
@@ -43,6 +45,7 @@
   margin: auto;
   text-align: right;
 }
+
 
 .language-switcher li {
   display: inline-block;
